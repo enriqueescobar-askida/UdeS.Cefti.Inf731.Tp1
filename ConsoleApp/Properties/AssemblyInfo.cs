@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UdeS.Cefti.Inf731.Tp1")]
+[assembly: AssemblyTitle("ConsoleApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UdeS.Cefti.Inf731.Tp1")]
+[assembly: AssemblyProduct("ConsoleApp")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("52987cc4-78a2-409b-b120-7a45efe2a727")]
+[assembly: Guid("4015a626-c3e6-4f19-aa1a-e028e1c8a81b")]
 
 // Version information for an assembly consists of the following four values:
 //

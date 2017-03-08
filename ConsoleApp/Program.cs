@@ -1,10 +1,11 @@
-﻿namespace UdeS.Cefti.Inf731.Tp1
+﻿namespace ConsoleApp
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+
     class Program
     {
         static void Main(string[] args)
