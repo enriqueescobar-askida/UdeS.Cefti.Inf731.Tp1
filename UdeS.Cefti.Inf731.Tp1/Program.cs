@@ -1,6 +1,4 @@
-﻿
-
-namespace UdeS.Cefti.Inf731.Tp1
+﻿namespace UdeS.Cefti.Inf731.Tp1
 {
     using System;
     using System.Collections.Generic;
