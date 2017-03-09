@@ -13,6 +13,7 @@
             DonationReader dr = new DonationReader();
             Console.Out.WriteLine(dr.SetFile(@"..\..\..\d1.txt"));
             Console.Out.WriteLine(dr.ToString());
+            dr.ReadFile();
             Console.In.ReadLine();
         }
     }
