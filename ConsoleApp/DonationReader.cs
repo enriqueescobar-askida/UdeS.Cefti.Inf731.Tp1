@@ -9,7 +9,7 @@
     {
         private string filePath;
 
-        private List<string> LineList { get; set; }
+        private List<DonationRecord> LineList { get; set; }
 
         private StringBuilder StringBuilder { get; set; }
 
@@ -20,10 +20,7 @@
                 this.filePath = aFilePath;
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public void ReadFile()
@@ -37,6 +34,8 @@
                     //Console.Out.WriteLine(line);
                     DonationRecord dr = new DonationRecord(line);
                     Console.Out.WriteLine(dr.ToString());
+                    //if (dr.IsValid) this.LineList.Add(dr);
+
                     //this.StringBuilder.Append(line);
                     //this.LineList.Add(line);
                 }

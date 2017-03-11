@@ -65,7 +65,7 @@
             if (yearString.Length == 4)
             {
                 uint year = (uint)int.Parse(yearString);
-                isValid = (year >= 1996 && year <= 2017);
+                isValid = (year >= 1996 && year <= DateTime.Now.Year);
             }
 
             this.IsValid = this.IsValid && isValid;
