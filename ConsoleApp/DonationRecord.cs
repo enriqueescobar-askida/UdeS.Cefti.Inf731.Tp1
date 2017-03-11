@@ -29,19 +29,6 @@
             }
         }
 
-        private float FetchDonationAmount(string amountString)
-        {
-            float f = float.Parse(amountString.Replace(",", "."));
-            f = (float)Math.Round(f, 2);
-
-            return f;
-        }
-
-        private bool IsAmountValid()
-        {
-            return false;
-        }
-
         #region PrivateMethodsDonorNumber
         private string FetchDonorNumber(string numberString)
         {
@@ -81,6 +68,25 @@
                 isValid = (year >= 1996 && year <= 2017);
             }
 
+            this.IsValid = this.IsValid && isValid;
+
+            return isValid;
+        }
+        #endregion
+
+        #region PrivateMethodsDonationAmount
+        private float FetchDonationAmount(string amountString)
+        {
+            float f = float.Parse(amountString.Replace(",", "."));
+            f = (float)Math.Round(f, 2);
+
+            if (this.IsAmountValid(f)) return f;
+            else return float.NaN;
+        }
+
+        private bool IsAmountValid(float input)
+        {
+            bool isValid = (input > 0.00f);
             this.IsValid = this.IsValid && isValid;
 
             return isValid;
