@@ -25,16 +25,21 @@
             {
                 this.DonorNumber = this.FetchDonorNumber(line.Split(';')[0]);
                 this.DonationYear = this.FetchDonationYear(line.Split(';')[1]);
-                this.DonationAmount = this.FetchDonationAmount(line.Split(';')[2].Replace(",","."));
+                this.DonationAmount = this.FetchDonationAmount(line.Split(';')[2]);
             }
         }
 
         private float FetchDonationAmount(string amountString)
         {
-            float f = float.Parse(amountString.Split(';')[2].Replace(",", "."));
+            float f = float.Parse(amountString.Replace(",", "."));
             f = (float)Math.Round(f, 2);
 
             return f;
+        }
+
+        private bool IsAmountValid()
+        {
+            return false;
         }
 
         #region PrivateMethodsDonorNumber
