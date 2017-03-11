@@ -9,7 +9,9 @@
     {
         private string filePath;
 
-        private List<string> lineList;
+        private List<string> LineList { get; set; }
+
+        private StringBuilder StringBuilder { get; set; }
 
         public bool SetFile(string aFilePath)
         {
@@ -32,15 +34,18 @@
                 string line;
                 while ((line = streamReader.ReadLine()) != null)
                 {
-                    Console.Out.WriteLine(line);
-                    //this.lineList.Add(line);
+                    //Console.Out.WriteLine(line);
+                    DonationRecord dr = new DonationRecord(line);
+                    Console.Out.WriteLine(dr.ToString());
+                    //this.StringBuilder.Append(line);
+                    //this.LineList.Add(line);
                 }
             }
         }
 
         public override string ToString()
         {
-            return this.filePath;
+            return string.Empty;
         }
     }
 }
