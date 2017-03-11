@@ -25,8 +25,7 @@
             {
                 this.DonorNumber = this.FetchDonorNumber(line.Split(';')[0]);
                 this.DonationYear = this.FetchDonationYear(line.Split(';')[1]);
-                this.DonationAmount = float.Parse(line.Split(';')[2].Replace(",","."));
-                this.DonationAmount = (float)Math.Round(this.DonationAmount, 2);
+                this.DonationAmount = this.FetchDonationAmount(line.Split(';')[2].Replace(",","."));
             }
         }
 
