@@ -4,6 +4,8 @@
     using System.Collections.Generic;
     using System.IO;
 
+    using Data;
+
     public class DonationReader
     {
         private readonly string filePath;

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp
+﻿namespace Data
 {
     using System;
     using System.Linq;
@@ -12,9 +12,9 @@
 
         private string DonorNumber { get; }
 
-        private uint DonationYear { get; }
+        public uint DonationYear { get; internal set; }
 
-        private float DonationAmount { get; }
+        public float DonationAmount { get; internal set; }
 
         public DonationRecord(string line)
         {

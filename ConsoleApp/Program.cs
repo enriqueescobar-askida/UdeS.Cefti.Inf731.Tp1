@@ -3,6 +3,9 @@
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using System.Linq;
+
+    using Data;
 
     class Program
     {
@@ -11,9 +14,33 @@
             DonationReader dr = new DonationReader(@"..\..\..\d1.txt");
             List<DonationRecord> drList = dr.ReadFile();
             Console.Out.WriteLine(dr.ToString());
-            Console.In.ReadLine();
 
-            DonationManager dm = new DonationManager(drList);
+            //DonationManager dm = new DonationManager(drList);
+
+            SortedList<uint, float> sortedList = new SortedList<uint,float>();
+            foreach (DonationRecord donationRecord in drList)
+            {
+                Console.Out.WriteLine("-" + donationRecord.DonationYear + "_" + donationRecord.DonationAmount);
+
+                if (!sortedList.ContainsKey(donationRecord.DonationYear))
+                {
+                    Console.Out.WriteLine("--yes");
+                    sortedList.Add(donationRecord.DonationYear, donationRecord.DonationAmount);
+                }
+                else
+                {
+                    int i = sortedList.IndexOfKey(donationRecord.DonationYear);
+                    float oldAmount = sortedList.ElementAtOrDefault(i).Value;
+                    sortedList[donationRecord.DonationYear] = donationRecord.DonationAmount + oldAmount;
+                    Console.Out.WriteLine("--nope:" + i);
+                }
+            }
+
+            foreach (var f in sortedList)
+            {
+                Console.Out.WriteLine(f.Key + " " + f.Value);
+            }
+            Console.In.ReadLine();
 
             // Creates and initializes a new SortedList.
             SortedList mySL = new SortedList { { "Third", "!" }, { "Second", "World" }, { "First", "Hello" } };

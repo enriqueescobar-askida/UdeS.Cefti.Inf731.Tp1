@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleApp
+﻿namespace ConsoleApp
 {
+    using System.Collections.Generic;
+
+    using Data;
+
     class DonationManager
     {
         private List<DonationRecord> drList;
