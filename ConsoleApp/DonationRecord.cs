@@ -96,7 +96,11 @@
 
         public override string ToString()
         {
-            return this.DonationAmount.ToString("0.00");
+            string s = this.DonorNumber.PadRight(15);
+            s += this.DonationYear.ToString().PadRight(8);
+            s += this.DonationAmount.ToString("0.00").PadLeft(5);
+
+            return s;
         }
     }
 }
