@@ -6,11 +6,16 @@
 
     public class DonationManager
     {
-        private List<DonationRecord> drList;
+        private YearManager yearManager;
 
         public DonationManager(List<DonationRecord> drList)
         {
-            this.drList = drList;
+            this.yearManager = new YearManager(drList);
+        }
+
+        public override string ToString()
+        {
+            return this.yearManager.ToString();
         }
     }
 }
