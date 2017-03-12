@@ -8,13 +8,13 @@
         private const string FloatFormat = "0.00";
         public bool IsValid { get; internal set; }
 
-        private string DonationString { get; set; }
+        private string DonationString { get; }
 
-        private string DonorNumber { get; set; }
+        private string DonorNumber { get; }
 
-        private uint DonationYear { get; set; }
+        private uint DonationYear { get; }
 
-        private float DonationAmount { get; set; }
+        private float DonationAmount { get; }
 
         public DonationRecord(string line)
         {
@@ -27,6 +27,7 @@
                 this.DonationYear = this.FetchDonationYear(line.Split(';')[1]);
                 this.DonationAmount = this.FetchDonationAmount(line.Split(';')[2]);
             }
+            else throw new ArgumentOutOfRangeException("Arguments passed are not between parameters");
         }
 
         #region PrivateMethodsDonorNumber
