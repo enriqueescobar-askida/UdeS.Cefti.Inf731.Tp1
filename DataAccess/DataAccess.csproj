@@ -41,9 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DonationReader.cs" />
+    <Compile Include="DonationWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{D82E1D7E-A7CC-4F23-830E-B5D382F659ED}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{2A4A9B7D-622B-4D76-A218-688FEC9B2248}</Project>
       <Name>Data</Name>
