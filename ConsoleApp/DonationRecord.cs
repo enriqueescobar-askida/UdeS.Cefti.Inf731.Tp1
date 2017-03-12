@@ -42,10 +42,16 @@
 
         private bool IsNumberValid(string input)
         {
-            bool isValid = input.Contains("-");
-            this.IsValid = this.IsValid && isValid;
+            bool isValid = false;
 
-            return isValid;
+            if (input.Contains("-"))
+            {
+                isValid = true;
+                this.IsValid = this.IsValid && isValid;
+
+                return isValid;
+            }
+            throw new ArgumentException("The parameter 'Number' does not contain '-':" + input);
         }
         #endregion
 
@@ -66,12 +72,17 @@
             if (yearString.Length == 4)
             {
                 uint year = (uint)int.Parse(yearString);
-                isValid = (year >= 1996 && year <= DateTime.Now.Year);
+
+                if (year >= 1996 && year <= DateTime.Now.Year)
+                {
+                    isValid = true;
+                    this.IsValid = this.IsValid && isValid;
+
+                    return isValid;
+                }
+                throw new ArgumentOutOfRangeException("The argument 'Year' is outside bounds [1996;" + DateTime.Now.Year + "]:" + yearString);
             }
-
-            this.IsValid = this.IsValid && isValid;
-
-            return isValid;
+            throw new ArgumentException("The argument 'Year' has not 4 digits:" + yearString);
         }
         #endregion
 
@@ -87,10 +98,16 @@
 
         private bool IsAmountValid(float input)
         {
-            bool isValid = (input > 0.00f);
-            this.IsValid = this.IsValid && isValid;
+            bool isValid = false;
 
-            return isValid;
+            if (input > 0.00f)
+            {
+                isValid = true;
+                this.IsValid = this.IsValid && isValid;
+
+                return isValid;
+            }
+            throw new ArgumentOutOfRangeException("The parameter 'Amount' is out off limits:" + input);
         }
         #endregion
 
