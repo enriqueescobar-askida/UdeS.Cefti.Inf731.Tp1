@@ -1,6 +1,7 @@
 ﻿namespace BusinessLogic
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
@@ -40,6 +41,13 @@
             {
                 KeyValuePair<float, string> sortedKeyValuePair = this.sortedList.ElementAt(nbElements - i - 1);
                 s += sortedKeyValuePair.Value + sortedKeyValuePair.Key.ToString("0.00").PadLeft(9) + "\n";
+
+                if (this.doubleList.ContainsKey(sortedKeyValuePair.Key))
+                {
+                    int j = this.doubleList.IndexOfKey(sortedKeyValuePair.Key);
+                    KeyValuePair<float, string> doublKeyValuePair = this.doubleList.ElementAt(j);
+                    s += doublKeyValuePair.Value + doublKeyValuePair.Key.ToString("0.00").PadLeft(9) + "\n";
+                }
             }
 
             return s;

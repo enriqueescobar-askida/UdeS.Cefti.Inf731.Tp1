@@ -21,7 +21,7 @@
             Console.In.ReadLine();
 
             // Creates and initializes a new ArrayList.
-            ArrayList myAL = new ArrayList { "Hello", "World", "!" };
+            ArrayList myAL = new ArrayList { "Hello", "World", "!", "!" };
 
             // Displays the properties and values of the ArrayList.
             Console.WriteLine("myAL");
