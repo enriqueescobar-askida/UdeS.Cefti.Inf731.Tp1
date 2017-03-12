@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4015A626-C3E6-4F19-AA1A-E028E1C8A81B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{D82E1D7E-A7CC-4F23-830E-B5D382F659ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApp</RootNamespace>
-    <AssemblyName>ConsoleApp</AssemblyName>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,24 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DonationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
-      <Project>{d82e1d7e-a7cc-4f23-830e-b5d382f659ed}</Project>
-      <Name>BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{F09C9FA7-9839-4DB6-BC4D-01E10F2B6933}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{2a4a9b7d-622b-4d76-a218-688fec9b2248}</Project>
+      <Project>{2A4A9B7D-622B-4D76-A218-688FEC9B2248}</Project>
       <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>

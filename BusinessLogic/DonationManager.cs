@@ -1,10 +1,10 @@
-﻿namespace ConsoleApp
+﻿namespace BusinessLogic
 {
     using System.Collections.Generic;
 
     using Data;
 
-    class DonationManager
+    public class DonationManager
     {
         private List<DonationRecord> drList;
 

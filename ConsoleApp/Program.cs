@@ -7,6 +7,7 @@
 
     using Data;
     using DataAccess;
+    using BusinessLogic;
 
     class Program
     {
@@ -16,7 +17,7 @@
             List<DonationRecord> drList = dr.ReadFile();
             Console.Out.WriteLine(dr.ToString());
 
-            //DonationManager dm = new DonationManager(drList);
+            DonationManager dm = new DonationManager(drList);
 
             SortedList<uint, float> sortedList = new SortedList<uint,float>();
             foreach (DonationRecord donationRecord in drList)
