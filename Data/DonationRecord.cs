@@ -10,7 +10,7 @@
 
         private string DonationString { get; }
 
-        private string DonorNumber { get; }
+        public string DonorNumber { get; }
 
         public uint DonationYear { get; internal set; }
 

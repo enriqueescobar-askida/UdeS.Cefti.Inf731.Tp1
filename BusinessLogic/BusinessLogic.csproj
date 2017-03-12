@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DonationManager.cs" />
+    <Compile Include="AmountManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YearManager.cs" />
   </ItemGroup>
