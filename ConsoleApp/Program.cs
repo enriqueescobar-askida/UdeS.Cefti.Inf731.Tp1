@@ -14,7 +14,7 @@
         {
             DonationReader dr = new DonationReader(@"..\..\..\d1.txt");
             List<DonationRecord> drList = dr.ReadFile();
-            Console.Out.WriteLine(dr.ToString());
+            Console.Error.WriteLine(dr.ToString());
 
             DonationManager dm = new DonationManager(drList);
             Console.Out.WriteLine(dm.ToString());
@@ -30,15 +30,6 @@
             Console.Write("    Values:");
             PrintValues(myAL);
             Console.In.ReadLine();
-        }
-        public static void PrintKeysAndValues(SortedList myList)
-        {
-            Console.WriteLine("\t-KEY-\t-VALUE-");
-            for (int i = 0; i < myList.Count; i++)
-            {
-                Console.WriteLine("\t{0}:\t{1}", myList.GetKey(i), myList.GetByIndex(i));
-            }
-            Console.WriteLine();
         }
         public static void PrintValues(IEnumerable myList)
         {
