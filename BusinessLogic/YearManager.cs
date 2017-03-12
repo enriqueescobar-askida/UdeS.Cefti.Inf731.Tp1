@@ -9,7 +9,7 @@
 
     internal class YearManager
     {
-        private SortedList<uint, float> sortedList;
+        private readonly SortedList<uint, float> sortedList;
         public YearManager(List<DonationRecord> drList)
         {
             SortedList<uint, float> sList = new SortedList<uint, float>();

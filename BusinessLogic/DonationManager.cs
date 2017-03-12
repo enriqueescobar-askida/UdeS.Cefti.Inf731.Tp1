@@ -6,7 +6,7 @@
 
     public class DonationManager
     {
-        private YearManager yearManager;
+        private readonly YearManager yearManager;
 
         public DonationManager(List<DonationRecord> drList)
         {
