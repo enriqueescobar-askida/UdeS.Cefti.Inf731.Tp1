@@ -229,7 +229,27 @@ premier rapport.
 
 ### Autres consignes relatives à la conception et à l’implantation
 
-
+1. Il est convenu que nous ne savons d’aucune manière combien de dons
+auront eu lieu au fil des années. On s’entend que leur nombre sera
+raisonnable6 sinon on aurait utilisé les services d’une base de données
+pour les conserver. Un tableau dont vous augmenterez la taille au besoin
+ou un dispositif comparable déjà disponible dans l’environnement de C#
+sera donc à utiliser dans le cadre de ce programme.
+2. Au début de la période de développement, vous pouvez utiliser
+simplement un tableau de très grande dimension pour simplifier votre
+programme; plus tard, il sera possible de modifier cette implantation
+puisque la classe encapsule ses attributs.
+3. Il serait sans doute approprié de conserver la liste des dons dans une
+classe où elle serait encapsulée; elle serait ainsi accompagnée dans la
+classe des méthodes permettant de traiter ces données.
+4. Pensez aux validations des données : vous devriez identifier dès le début
+les cas à rejeter.
+5. Procédez étape par étape pour faire avancer votre projet. Vous pouvez fort
+bien écrire une partie de la classe pour la tester avant de continuer.
+6. La lecture des données devra se faire par le biais d’un objet de classe
+***StreamReader***. Des explications vous seront données en classe à ce sujet.
+7. L’écriture de vos résultats devra se faire par le biais d’un objet de classe
+***StreamWriter***. Explications à venir également.
 
 ## Critères de correction
 
