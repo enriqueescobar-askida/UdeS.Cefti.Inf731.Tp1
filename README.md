@@ -253,6 +253,12 @@ bien écrire une partie de la classe pour la tester avant de continuer.
 
 ## Critères de correction
 
+Ce travail est corrigé sur 100 mais pondéré ensuite sur 12 points dans le calcul de
+la note finale du cours. Vous devez le faire par équipe de deux
+personnes. Le barème de correction appliqué à ce programme sera :
+
+
+
 Vous devez, lors de la remise, me fournir votre projet en entier accompagné d’un
 fichier ***Dons.txt*** qui vous a permis de tester le bon fonctionnement de votre
 programme. J’utiliserai ce fichier pour effectuer le premier test de vérification.
