@@ -255,3 +255,10 @@ me donnant le soir de la remise un CD gravé contenant votre projet complet ains
 que les fichiers supplémentaires demandés. Si vous procédez ainsi, le nom de
 dossier contenant votre projet sur le CD doit répondre à l’exigence mentionnée au
 prochain paragraphe.
+
+***IMPORTANT*** : pour me rendre la gestion de tout cela plus facile, je vous
+demande de nommer votre dossier contenant le projet aux noms et prénoms des
+équipiers avant de le zipper; ainsi, le travail de Luc Robitaille et Wayne Gretzky
+me serait expédié en pièce jointe sous le nom RobitailleLuc_GretzkyWayne.zi~.
+N’oubliez pas non plus de supprimer les dossiers ***Bin*** et ***Obj*** avant de produire
+l’archive. 
