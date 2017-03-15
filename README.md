@@ -242,7 +242,9 @@ vous me remettez est le fichier contenant la classe Program dont le Main sert de
 point d’entrée au projet. Ce fichier sera ensuite suivi de la liste des autres classes,
 dans l’ordre qui vous semblera le plus logique.
 La date de remise est fixée à la fin de la dixième séance, soit le
+
 ***Mardi 14 mars 2017 à la fin de la séance (21h45) au plus tard***
+
 Vous pourrez remettre la version électronique de votre travail en me le faisant
 parvenir en pièce jointe à un message de courriel à l’adresse ***.prudhomme@gmail.com***,
 la date et l’heure du message faisant foi du
