@@ -268,6 +268,19 @@ commentaires
   * usage de constantes lorsque la situation s’y prête
   * élégance du code
 
+Les commentaires devront au moins inclure :
+* Un prologue au programme indiquant
+  * le nom des auteurs
+  * le nom du fichier
+  * le nom du projet
+  * la date de création
+  * la description de ce que fait ce programme
+* Un prologue à chaque méthode indiquant
+  * la description de ce que fait ce sous-programme
+  * une description des intrants
+  * une description des extrants et valeur de retour
+* Chaque partie de code dont la seule lecture n’indique pas clairement la
+raison d’être devrait également porter un commentaire
 
 Vous devez, lors de la remise, me fournir votre projet en entier accompagné d’un
 fichier ***Dons.txt*** qui vous a permis de tester le bon fonctionnement de votre
