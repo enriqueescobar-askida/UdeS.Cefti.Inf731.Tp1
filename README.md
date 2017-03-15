@@ -259,6 +259,14 @@ personnes. Le barème de correction appliqué à ce programme sera :
 - 50% des points pour le bon fonctionnement lors des tests; il y aura
 plusieurs tests effectués et leur pondération sera variable.
 - 50% des points pour les autres critères
+commentaires
+  * respect des demandes indiquées dans cet énoncé
+  * bon découpage du problème
+  * bonne utilisation des concepts de la POO
+  * qualité de la programmation
+  * respect des normes usuelles appliquées dans le cours
+  * usage de constantes lorsque la situation s’y prête
+  * élégance du code
 
 
 Vous devez, lors de la remise, me fournir votre projet en entier accompagné d’un
