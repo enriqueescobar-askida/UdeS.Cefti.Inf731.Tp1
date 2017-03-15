@@ -138,11 +138,11 @@ nom du fichier d’entrée contenant la liste des dons. Il est convenu que ce fi
 d’entrée se trouvera dans le dossier où résident tous les fichiers .cs du projet. Par
 exemple :
 
-*** ***
+*
 
 Si le fichier dont l’utilisateur entre le nom n’existe pas, le programme le signale à
 l’utilisateur et redemande le nom du fichier. Exemple :
 
-*** ***
+*
 
 
