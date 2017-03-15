@@ -49,4 +49,35 @@ plus grande que 20172;
 - Le montant du don, qui doit être strictement positif, c’est-à-dire plus
 grand que 0.
 
+Un fichier contient l’ensemble des dons faits au fil du temps par nos donateurs.
+Chaque ligne du fichier décrit un don et comporte tous les éléments mentionnés
+ci-haut. Vous avez l’assurance que toutes les informations sont présentes à
+chaque ligne. Le format d’une ligne décrivant un don est le suivant :
 
+numéro de donateur;année;montant
+
+Par exemple, on pourrait avoir le fichier suivant :
+
+*
+*
+*
+*
+*
+*
+*
+
+Vous avez l’assurance que dans le fichier des donateurs,
+1. Le numéro du donateur ne comporte pas d’espace; il n’y a pas de règle de
+validation du numéro;
+
+2. Vous avez l’assurance que le deuxième élément de la ligne, qui correspond
+à l’année du don, est un entier correctement formé qui pourra être
+reconstitué sans problème. Par contre, vous devez valider que l’année se
+trouve dans les bornes déjà mentionnées;
+
+3. Vous avez l’assurance que le troisième élément de la ligne, qui correspond
+au montant du don, est un réel correctement formé qui pourra être
+reconstitué sans problème. Toutefois, vous devez valider cette donnée
+pour vous assurer qu’elle est supérieure à 04.
+Dans le fichier, les éléments sont séparés les uns des autres sur la ligne par un
+point-virgule. 
