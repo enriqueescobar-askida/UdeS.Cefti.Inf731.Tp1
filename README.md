@@ -126,8 +126,10 @@ fichier des dons lu par le programme. Par exemple, si le fichier d’entrée
 comprenant les dons se nomme ‘d1.txt’, l’entête sera : 
 
 ***-------------------------------------------------------------------------
+
 Rapport du traitement de d1.txt
 par Jean-François Lefort et Lucette Labonté
+
 -------------------------------------------------------------------------***
 
 
