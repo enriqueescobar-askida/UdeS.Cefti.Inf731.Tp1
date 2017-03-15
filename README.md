@@ -200,5 +200,27 @@ MT-27263        12.95
 
 2015        41.76
 
+Notez que la qualité de la présentation dans le fichier de sortie est importante et
+doit contribuer à bien comprendre les résultats. Il serait sans doute avisé de vous
+inspirer du mode de présentation que je vous suggère ici; vous pouvez bien
+entendu faire mieux !
+
+Par contre, avant de vous soucier de la qualité de la présentation, vous devrez
+vous assurer que le traitement est correct et les résultats valables. Un résultat
+erroné mais bien présenté ne vaut … pas grand chose.
+
+### Caractéristiques de la classe Don
+
+Vous ***devez*** créer dans votre projet une classe Don pour décrire un don qui a été
+fait à l’organisme. Chaque instance de Don aura comme attributs le numéro du
+donateur (un string), l’année où a été fait ce don (un entier) et le montant du don
+en question (un float suffira amplement).
+Sans égard aux services utilisés par le programme client, la classe devra offrir5:
+
+
+
+
+
+
 
 
