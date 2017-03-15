@@ -156,4 +156,32 @@ Encore une fois, il est convenu que ce fichier des résultats sera inscrit dans 
 même dossier que les fichiers .cs du projet.
 Après avoir produit les rapports pour un fichier de données, votre programme
 doit demander à l’utilisateur le nom d’un nouveau fichier de dons à traiter.
-Lorsque l’utilisateur fait « enter » sans entrer de nom, le programme prend fin. 
+Lorsque l’utilisateur fait « enter » sans entrer de nom, le programme prend fin.
+
+Contenu du fichier de sortie – le rapport
+Voici un exemple de fichier de sortie :
+
+UL-34            2016    51.00
+UL-34            2016    44.00
+UL-34            2016    33.00
+UL-34            2016    30.00
+UL-34            2016    25.00
+UL-34            2016    22.00
+JT-27263         2015    15.95
+JT-27263         2015    12.95
+MT-27263         2016    12.95
+JT-27263         2015    12.86
+JT-27263         2016    12.75
+JT-27263         2016    12.55
+JT-27263         2016    12.00
+UL-34            2016     5.00
+
+UL-34          210.00
+JT-27263        79.06
+MT-27263        12.95
+
+2016       260.25
+2015        41.76
+
+
+
