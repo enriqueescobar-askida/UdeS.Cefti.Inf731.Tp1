@@ -256,7 +256,9 @@ bien écrire une partie de la classe pour la tester avant de continuer.
 Ce travail est corrigé sur 100 mais pondéré ensuite sur 12 points dans le calcul de
 la note finale du cours. Vous devez le faire par équipe de deux
 personnes. Le barème de correction appliqué à ce programme sera :
-
+- 50% des points pour le bon fonctionnement lors des tests; il y aura
+plusieurs tests effectués et leur pondération sera variable.
+- 50% des points pour les autres critères
 
 
 Vous devez, lors de la remise, me fournir votre projet en entier accompagné d’un
