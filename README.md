@@ -253,6 +253,13 @@ bien écrire une partie de la classe pour la tester avant de continuer.
 
 ## Critères de correction
 
+Vous devez, lors de la remise, me fournir votre projet en entier accompagné d’un
+fichier ***Dons.txt*** qui vous a permis de tester le bon fonctionnement de votre
+programme. J’utiliserai ce fichier pour effectuer le premier test de vérification.
+Ainsi, vous êtes assuré d’avoir un certain nombre de points dans le
+fonctionnement de votre programme8. Bien entendu, je mettrai au point d’autres
+fichiers de tests pour valider le bon fonctionnement de vos programmes. 
+
 ## Remise
 
 Vous devez remettre une version papier et une version électronique de votre
