@@ -145,4 +145,15 @@ l’utilisateur et redemande le nom du fichier. Exemple :
 
 *
 
+Si le fichier existe, le programme fait la création d’un fichier de sortie qui
+contiendra les rapports à produire. Le fichier de sortie que votre programme doit
+créer portera le nom « Rapports - » suivi du nom du fichier des dons qui doit être
+traité. Pour le fichier d’entrée ‘d1.txt’, le fichier de sortie serait
 
+‘Rapports – d1.txt’
+
+Encore une fois, il est convenu que ce fichier des résultats sera inscrit dans le
+même dossier que les fichiers .cs du projet.
+Après avoir produit les rapports pour un fichier de données, votre programme
+doit demander à l’utilisateur le nom d’un nouveau fichier de dons à traiter.
+Lorsque l’utilisateur fait « enter » sans entrer de nom, le programme prend fin. 
