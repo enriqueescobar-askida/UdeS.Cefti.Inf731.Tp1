@@ -215,11 +215,19 @@ Vous ***devez*** créer dans votre projet une classe Don pour décrire un don qu
 fait à l’organisme. Chaque instance de Don aura comme attributs le numéro du
 donateur (un string), l’année où a été fait ce don (un entier) et le montant du don
 en question (un float suffira amplement).
-Sans égard aux services utilisés par le programme client, la classe devra offrir5:
+Sans égard aux services utilisés par le programme client, la classe devra offrir:
 
+- un seul constructeur qui sera paramétrique recevant en paramètre une
+chaîne, un entier et un float qui représenteront respectivement le numéro du
+donateur, l’année du don et le montant de ce don;
+- un constructeur de copie;
+- des propriétés permettant de modifier les attributs et de faire connaître la
+valeur des attributs d’un Don; à vous de déterminer leur degré de visibilité
+correct;
+- une surcharge de la méthode ***ToString()*** afin de simplifier la production du
+premier rapport. 
 
-
-
+### Autres consignes relatives à la conception et à l’implantation
 
 
 
