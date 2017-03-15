@@ -59,18 +59,31 @@ numéro de donateur;année;montant
 Par exemple, on pourrait avoir le fichier suivant :
 
 JT-27263;2015;12,95
+
 UL-34;2016;25,00
+
 JT-27263;2015;15,95
+
 UL-34;2016;30,00
+
 MT-27263;2016;12,95
+
 UL-34;2016;5,00
+
 JT-27263;2015;12,86
+
 UL-34;2016;51,00
+
 JT-27263;2016;12,75
+
 UL-34;2016;22,00
+
 JT-27263;2016;12,55
+
 UL-34;2016;33,00
+
 JT-27263;2016;12,00
+
 UL-34;2016;44,00
 
 Vous avez l’assurance que dans le fichier des donateurs,
