@@ -133,4 +133,16 @@ comprenant les dons se nomme ‘d1.txt’, l’entête sera :
 
 ***-------------------------------------------------------------------------***
 
+Lorsque votre programme se mettra en marche, il demandera à l’utilisateur le
+nom du fichier d’entrée contenant la liste des dons. Il est convenu que ce fichier
+d’entrée se trouvera dans le dossier où résident tous les fichiers .cs du projet. Par
+exemple :
+
+*** ***
+
+Si le fichier dont l’utilisateur entre le nom n’existe pas, le programme le signale à
+l’utilisateur et redemande le nom du fichier. Exemple :
+
+*** ***
+
 
